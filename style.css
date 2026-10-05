@@ -1,0 +1,79 @@
+body {
+    background-image: url("img/stone.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-size: 500%;
+    font-family: Impact;
+}
+
+h1::first-letter {
+    font-size: 150%;
+}
+
+.element {
+    font-size: 14px;
+}
+
+.top-bar {
+    font-size: 40px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 1rem;
+}
+
+.top-bar a {
+    margin: 70px;
+    font-family: 'Impact';
+}
+
+.text {
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+    border: 10px solid black;
+}
+
+.pics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pics img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+p::first-line {
+    text-transform: uppercase;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked + .click {
+    display: none;
+}
+
+.checkbox:checked + .click + .hidden {
+    display: inline;
+}
+
+.click {
+    display: inline-block;
+    height: 1rem;
+    width: 4rem;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
